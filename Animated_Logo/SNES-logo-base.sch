@@ -588,10 +588,6 @@ Based on the following sources:&lt;p&gt;
 <part name="R3" library="snes_div" deviceset="R0805" device="" value="1k"/>
 <part name="R5" library="snes_div" deviceset="R0805" device="" value="1k"/>
 <part name="R7" library="snes_div" deviceset="R0805" device="" value="1k"/>
-<part name="R2" library="snes_div" deviceset="R0805" device="" value="150"/>
-<part name="R4" library="snes_div" deviceset="R0805" device="" value="150"/>
-<part name="R6" library="snes_div" deviceset="R0805" device="" value="100"/>
-<part name="R8" library="snes_div" deviceset="R0805" device="" value="100"/>
 <part name="U$11" library="MS_Mod" deviceset="PAD_COMBI" device=""/>
 <part name="U$12" library="MS_Mod" deviceset="PAD_COMBI" device=""/>
 <part name="U$13" library="MS_Mod" deviceset="PAD_COMBI" device=""/>
@@ -627,10 +623,6 @@ Based on the following sources:&lt;p&gt;
 <instance part="R3" gate="G$1" x="81.28" y="48.26"/>
 <instance part="R5" gate="G$1" x="81.28" y="30.48"/>
 <instance part="R7" gate="G$1" x="81.28" y="12.7"/>
-<instance part="R2" gate="G$1" x="96.52" y="60.96"/>
-<instance part="R4" gate="G$1" x="96.52" y="43.18"/>
-<instance part="R6" gate="G$1" x="96.52" y="25.4"/>
-<instance part="R8" gate="G$1" x="96.52" y="7.62"/>
 <instance part="U$11" gate="G$1" x="106.68" y="60.96"/>
 <instance part="U$12" gate="G$1" x="106.68" y="43.18"/>
 <instance part="U$13" gate="G$1" x="106.68" y="25.4"/>
@@ -714,30 +706,6 @@ Based on the following sources:&lt;p&gt;
 <pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="Q1" gate="G$1" pin="E"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="Q2" gate="G$1" pin="E"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="Q3" gate="G$1" pin="E"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="Q4" gate="G$1" pin="E"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(XTAL2)PB4"/>
@@ -772,30 +740,6 @@ Based on the following sources:&lt;p&gt;
 <wire x1="71.12" y1="12.7" x2="76.2" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="U$11" gate="G$1" pin="P$1"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="U$12" gate="G$1" pin="P$1"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="U$13" gate="G$1" pin="P$1"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="U$14" gate="G$1" pin="P$1"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="1"/>
@@ -805,6 +749,34 @@ Based on the following sources:&lt;p&gt;
 <wire x1="63.5" y1="76.2" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="63.5" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
 <junction x="63.5" y="63.5"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$12" gate="G$1" pin="P$1"/>
+<pinref part="Q2" gate="G$1" pin="E"/>
+<wire x1="101.6" y1="43.18" x2="91.44" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$13" gate="G$1" pin="P$1"/>
+<pinref part="Q3" gate="G$1" pin="E"/>
+<wire x1="101.6" y1="25.4" x2="91.44" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$14" gate="G$1" pin="P$1"/>
+<pinref part="Q4" gate="G$1" pin="E"/>
+<wire x1="101.6" y1="7.62" x2="91.44" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$11" gate="G$1" pin="P$1"/>
+<pinref part="Q1" gate="G$1" pin="E"/>
+<wire x1="101.6" y1="60.96" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -12,5 +12,5 @@ Others:
 
 - Software: http://circuit-board.de/forum/index.php/Thread/7573-Super-Nintendo-Beleuchtetes-animiertes-Logo/
 - Fuse Bits for the ATTiny45: lfuse: 0xe2, hfuse:w:0xdf
-- The given resistor values for the LEDs (2x 150Ohm (yellow, red) and 2x 100Ohm (green, blue)) are just examples. You may adjust these values according to your needs :)
-- LEDs are in 0805 package.
+- The given resistor values for the LEDs (2x 180Ohm (yellow, red) and 2x 120Ohm (green, blue)) are just examples. You may adjust these values according to your needs :)
+- LEDs are in 0805 or P-LCC-2 package.

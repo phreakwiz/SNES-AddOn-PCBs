@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -550,8 +550,8 @@ Source: http://www.osram.convergy.de/ ... ls_t675.pdf</description>
 <smd name="A" x="0" y="2.75" dx="4" dy="4" layer="1" stop="no" cream="no"/>
 <text x="-2.54" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="3.81" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="-0.635" y="2.54" size="1.27" layer="21">A</text>
-<text x="-0.635" y="-3.81" size="1.27" layer="21">C</text>
+<text x="-0.635" y="2.54" size="1.27" layer="51">A</text>
+<text x="-0.635" y="-3.81" size="1.27" layer="51">C</text>
 <rectangle x1="-1.3" y1="-2.25" x2="1.3" y2="-0.75" layer="31"/>
 <rectangle x1="-1.3" y1="0.75" x2="1.3" y2="2.25" layer="31"/>
 <rectangle x1="-0.25" y1="-0.25" x2="0.25" y2="0.25" layer="21"/>
@@ -1600,6 +1600,54 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="snes_div">
+<packages>
+<package name="Z0805">
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.905" y1="-0.790575" x2="-1.905" y2="0.790575" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="0.790575" x2="-1.5875" y2="1.108075" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.5875" y1="1.108075" x2="1.5875" y2="1.108075" width="0.1524" layer="21"/>
+<wire x1="1.5875" y1="1.108075" x2="1.905" y2="0.790575" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.905" y1="0.790575" x2="1.905" y2="-0.790575" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-0.790575" x2="1.5875" y2="-1.108075" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.5875" y1="-1.108075" x2="-1.5875" y2="-1.108075" width="0.1524" layer="21"/>
+<wire x1="-1.5875" y1="-1.108075" x2="-1.905" y2="-0.790575" width="0.1524" layer="21" curve="-90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RESISTOR">
+<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="R0805">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="Z0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1619,6 +1667,14 @@ Source: www.kingbright.com</description>
 <part name="U$4" library="MS_Mod" deviceset="PAD" device=""/>
 <part name="U$5" library="MS_Mod" deviceset="PAD" device=""/>
 <part name="U$6" library="MS_Mod" deviceset="PAD" device=""/>
+<part name="R2" library="snes_div" deviceset="R0805" device="" value="150"/>
+<part name="R1" library="snes_div" deviceset="R0805" device="" value="150"/>
+<part name="R3" library="snes_div" deviceset="R0805" device="" value="100"/>
+<part name="R4" library="snes_div" deviceset="R0805" device="" value="100"/>
+<part name="LED5" library="led" deviceset="LED" device="P-LCC-2"/>
+<part name="LED6" library="led" deviceset="LED" device="P-LCC-2"/>
+<part name="LED7" library="led" deviceset="LED" device="P-LCC-2"/>
+<part name="LED8" library="led" deviceset="LED" device="P-LCC-2"/>
 </parts>
 <sheets>
 <sheet>
@@ -1629,21 +1685,32 @@ Source: www.kingbright.com</description>
 <instance part="LED2" gate="G$1" x="12.7" y="50.8" rot="R90"/>
 <instance part="LED3" gate="G$1" x="12.7" y="33.02" rot="R90"/>
 <instance part="LED4" gate="G$1" x="12.7" y="15.24" rot="R90"/>
-<instance part="U$1" gate="G$1" x="5.08" y="68.58" rot="R180"/>
-<instance part="U$3" gate="G$1" x="5.08" y="50.8" rot="R180"/>
-<instance part="U$4" gate="G$1" x="5.08" y="33.02" rot="R180"/>
-<instance part="U$5" gate="G$1" x="5.08" y="15.24" rot="R180"/>
+<instance part="U$1" gate="G$1" x="-10.16" y="68.58" rot="R180"/>
+<instance part="U$3" gate="G$1" x="-10.16" y="50.8" rot="R180"/>
+<instance part="U$4" gate="G$1" x="-10.16" y="33.02" rot="R180"/>
+<instance part="U$5" gate="G$1" x="-10.16" y="15.24" rot="R180"/>
 <instance part="U$6" gate="G$1" x="17.78" y="2.54" rot="R270"/>
+<instance part="R2" gate="G$1" x="2.54" y="50.8"/>
+<instance part="R1" gate="G$1" x="2.54" y="68.58"/>
+<instance part="R3" gate="G$1" x="2.54" y="33.02"/>
+<instance part="R4" gate="G$1" x="2.54" y="15.24"/>
+<instance part="LED5" gate="G$1" x="12.7" y="63.5" rot="R90"/>
+<instance part="LED6" gate="G$1" x="12.7" y="45.72" rot="R90"/>
+<instance part="LED7" gate="G$1" x="12.7" y="27.94" rot="R90"/>
+<instance part="LED8" gate="G$1" x="12.7" y="10.16" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="N$1" class="0">
 <segment>
-<wire x1="17.78" y1="7.62" x2="17.78" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="15.24" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="33.02" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="50.8" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="7.62" x2="17.78" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="10.16" x2="17.78" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="15.24" x2="17.78" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="27.94" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="33.02" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="45.72" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="50.8" x2="17.78" y2="63.5" width="0.1524" layer="91"/>
 <junction x="17.78" y="50.8"/>
 <junction x="17.78" y="33.02"/>
 <junction x="17.78" y="15.24"/>
@@ -1652,42 +1719,87 @@ Source: www.kingbright.com</description>
 <pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="LED4" gate="G$1" pin="C"/>
 <pinref part="U$6" gate="G$1" pin="P$1"/>
+<pinref part="LED5" gate="G$1" pin="C"/>
+<wire x1="17.78" y1="63.5" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
+<junction x="17.78" y="63.5"/>
+<pinref part="LED6" gate="G$1" pin="C"/>
+<junction x="17.78" y="45.72"/>
+<pinref part="LED7" gate="G$1" pin="C"/>
+<junction x="17.78" y="27.94"/>
+<pinref part="LED8" gate="G$1" pin="C"/>
+<junction x="17.78" y="10.16"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="7.62" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
 <junction x="10.16" y="68.58"/>
-<pinref part="U$1" gate="G$1" pin="P$1"/>
+<pinref part="LED5" gate="G$1" pin="A"/>
+<wire x1="10.16" y1="63.5" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="50.8" x2="10.16" y2="50.8" width="0.1524" layer="91"/>
 <junction x="10.16" y="50.8"/>
-<pinref part="U$3" gate="G$1" pin="P$1"/>
+<pinref part="LED6" gate="G$1" pin="A"/>
+<wire x1="10.16" y1="45.72" x2="10.16" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="7.62" y1="33.02" x2="10.16" y2="33.02" width="0.1524" layer="91"/>
 <junction x="10.16" y="33.02"/>
-<pinref part="U$4" gate="G$1" pin="P$1"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="33.02" x2="10.16" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="LED7" gate="G$1" pin="A"/>
+<wire x1="10.16" y1="27.94" x2="10.16" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="LED4" gate="G$1" pin="A"/>
 <pinref part="LED4" gate="G$1" pin="A"/>
-<wire x1="7.62" y1="15.24" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
 <junction x="10.16" y="15.24"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="15.24" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="LED8" gate="G$1" pin="A"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<wire x1="-2.54" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
+<wire x1="-2.54" y1="68.58" x2="-5.08" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="U$4" gate="G$1" pin="P$1"/>
+<wire x1="-5.08" y1="33.02" x2="-2.54" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="U$5" gate="G$1" pin="P$1"/>
+<wire x1="-5.08" y1="15.24" x2="-2.54" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
