@@ -1,0 +1,2 @@
+Firmware SuperCIC:   https://sd2snes.de/blog/cool-stuff/supercic
+Firmware uIGR V2-V4: https://github.com/borti4938/Switchless-Mods/tree/master/SNES
