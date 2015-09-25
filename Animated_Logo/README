@@ -10,7 +10,7 @@ The PCB is designed to be assembled to the extension port of the ‘normal’ SN
 Others:
 =======
 
-- Software: http://circuit-board.de/forum/index.php/Thread/7573-Super-Nintendo-Beleuchtetes-animiertes-Logo/
+- Software: http://circuit-board.de/forum/index.php/Thread/7573-Super-Nintendo-Beleuchtetes-animiertes-Logo/ (can now be accessed here, too)
 - Fuse Bits for the ATTiny45: lfuse: 0xe2, hfuse:w:0xdf
 - The given resistor values for the LEDs (2x 180Ohm (yellow, red) and 2x 120Ohm (green, blue)) are just examples. You may adjust these values according to your needs :)
 - LEDs are in 0805 or P-LCC-2 package.
