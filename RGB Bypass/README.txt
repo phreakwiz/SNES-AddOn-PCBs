@@ -18,7 +18,8 @@ deactivate the RGB-output of S-RGB by lifting pin20, 22 and 24 from mainboard or
 equivalent installation guides: http://retrorgb.com/snes.html  
 (with this version, there is no need to adjust any brightness issues ;)  
   
-After modding there is no need for any components within the RGB-lines in the RGB cable. However, you may modify the board to use standard cables (see notes).  
+While modding some components on the PCB may vary depending on your RGB cable you want to use.  
+See the notes related to the components!    
   
 -----------------------------------------------------------------------------------  
   
@@ -28,7 +29,7 @@ Component needed:
  - 1x THS7314 SOIC-8 package [board SNES_RGBAmp only]  
  - 1x THS7374 TSSOP-14 package [board SNES_RGBAmp_1Chip03+ only]  
   
- - 1x 22uF/6.3V polymer tantalum capacitor type-C package  
+ - 1x 22uF/6.3V tantalum capacitor type-C package  
  - 1x 100nF/50V ceramic capacitor 0805 package  
   
  - 2x 1.3kOhm resistor 0805 package (0.125W, 1% tolerance should be fine) [1]  
@@ -48,11 +49,11 @@ Component needed:
   
 2.b) Additional parts for using PAL-cable schematic [4,6]:  
  - 3x 39Ohm resistor 0805 package (0.125W, 1% tolerance should be fine)  
- - 3x 330uF/6.3V polymer tantalum capacitor type-D package  
+ - 3x 330uF/6.3V tantalum capacitor type-D package  
   
 2.c) Additional parts for a cable with direct wiring RGB [4,5]:  
  - 3x 75Ohm resistor 0805 package (0.125W, 1% tolerance should be fine)  
- - 3x 330uF/6.3V polymer tantalum capacitor type-D package  
+ - 3x 330uF/6.3V tantalum capacitor type-D package  
   
 -----------------------------------------------------------------------------------  
   
