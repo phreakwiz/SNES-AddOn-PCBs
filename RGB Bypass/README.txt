@@ -8,7 +8,7 @@ Solder Joints:
   R - red image component from S-CPUN pin156  
   G - green image component from S-CPUN pin157  
   B - blue image component from S-CPUN pin158  
-  /CS - composite sync from S-CPUN pin152  
+  /CS - composite sync from S-CPUN pin151  
   
 Look for appropriate Vias and other equivalent solder joints ;)  
   
