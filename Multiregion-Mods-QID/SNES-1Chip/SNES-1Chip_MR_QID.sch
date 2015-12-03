@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2925,8 +2925,8 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="74HCU04" gate="A" pin="I"/>
 <wire x1="-73.66" y1="-63.5" x2="-71.12" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="-73.66" y="-76.2"/>
-<wire x1="-58.42" y1="-76.2" x2="-73.66" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="PAL_17.734MHZ" gate="G$1" pin="1"/>
+<wire x1="-58.42" y1="-76.2" x2="-73.66" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -2944,8 +2944,8 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="-30.48" y1="-63.5" x2="-25.4" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="-30.48" y="-63.5"/>
 <junction x="-30.48" y="-76.2"/>
-<wire x1="-53.34" y1="-76.2" x2="-30.48" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="PAL_17.734MHZ" gate="G$1" pin="2"/>
+<wire x1="-53.34" y1="-76.2" x2="-30.48" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -2959,8 +2959,8 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="74HCU04" gate="F" pin="I"/>
 <wire x1="-73.66" y1="-104.14" x2="-71.12" y2="-104.14" width="0.1524" layer="91"/>
 <junction x="-73.66" y="-116.84"/>
-<wire x1="-58.42" y1="-116.84" x2="-73.66" y2="-116.84" width="0.1524" layer="91"/>
 <pinref part="NTSC_21.477MHZ" gate="G$1" pin="1"/>
+<wire x1="-58.42" y1="-116.84" x2="-73.66" y2="-116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -2977,8 +2977,8 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="-30.48" y1="-104.14" x2="-25.4" y2="-104.14" width="0.1524" layer="91"/>
 <junction x="-30.48" y="-104.14"/>
 <junction x="-30.48" y="-116.84"/>
-<wire x1="-53.34" y1="-116.84" x2="-30.48" y2="-116.84" width="0.1524" layer="91"/>
 <pinref part="NTSC_21.477MHZ" gate="G$1" pin="2"/>
+<wire x1="-53.34" y1="-116.84" x2="-30.48" y2="-116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
