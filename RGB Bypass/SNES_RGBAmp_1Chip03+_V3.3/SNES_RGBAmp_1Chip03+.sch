@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8031,6 +8031,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C6" library="snescart" deviceset="C0805" device="" value="100n"/>
 <part name="C8" library="snescart" deviceset="C0805" device="" value="100n"/>
 <part name="C9" library="snescart" deviceset="C0805" device="" value="100n"/>
+<part name="C10" library="rcl" deviceset="CPOL-EU" device="SMCD" value="330u"/>
+<part name="SJ4" library="jumper" deviceset="SJ" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8075,6 +8077,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="C6" gate="G$1" x="76.2" y="-12.7"/>
 <instance part="C8" gate="G$1" x="83.82" y="-12.7"/>
 <instance part="C9" gate="G$1" x="91.44" y="-12.7"/>
+<instance part="C10" gate="G$1" x="33.02" y="-17.78" rot="R90"/>
+<instance part="SJ4" gate="1" x="33.02" y="-22.86"/>
 </instances>
 <busses>
 </busses>
@@ -8342,11 +8346,25 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="U$2" gate="G$1" pin="CO4"/>
 <wire x1="17.78" y1="-7.62" x2="25.4" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="-7.62" x2="25.4" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="-17.78" x2="25.4" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="+"/>
+<wire x1="30.48" y1="-17.78" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="SJ4" gate="1" pin="1"/>
+<wire x1="27.94" y1="-17.78" x2="25.4" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-22.86" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="27.94" y="-17.78"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="43.18" y1="-17.78" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="-"/>
+<pinref part="SJ4" gate="1" pin="2"/>
+<wire x1="38.1" y1="-22.86" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="38.1" y="-17.78"/>
 </segment>
 </net>
 </nets>

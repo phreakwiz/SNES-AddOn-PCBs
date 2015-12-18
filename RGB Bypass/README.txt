@@ -43,6 +43,7 @@ Component needed:
  - 3x 47pF/50V ceramic capacitor 0805 package [board SNES_RGBAmp_1Chip03+ in SNES Mini / SFC Jr. only], [2]  
   
  - 1x (between 75Ohm and 300Ohm [3]) resistor 0805 package (0.125W, 1% tolerance should be fine)  
+ - 1x 330uF/6.3V tantalum capacitor type-D package  
   
 2.a) Additional parts for using NTSC-cable schematic [4,5]:  
  - 3x 75Ohm resistor 0805 package (0.125W, 1% tolerance should be fine)  
