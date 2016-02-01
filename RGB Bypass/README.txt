@@ -42,7 +42,7 @@ Component needed:
  - 1x 47pF/50V ceramic capacitor 0805 package [board SNES_RGBAmp_1Chip03+ only], [2]  
  - 3x 47pF/50V ceramic capacitor 0805 package [board SNES_RGBAmp_1Chip03+ in SNES Mini / SFC Jr. only], [2]  
   
- - 1x (between 75Ohm and 300Ohm [3]) resistor 0805 package (0.125W, 1% tolerance should be fine)  
+ - 1x (between 75Ohm and 421Ohm [3]) resistor 0805 package (0.125W, 1% tolerance should be fine)  
  - 1x 330uF/6.3V tantalum capacitor type-D package  
   
 2.a) Additional parts for using NTSC-cable schematic [4,5]:  
@@ -67,7 +67,7 @@ You may want to replace them with 3x 750Ohm (R4, R5, R6) and 3x 7.5kOhm (R7, R8,
 These capacitors and not really needed, but they are present in 1Chip-01/02/03 consoles for de-bouncing the MultiAV jack while plugging in and out.  
   
 [3]  
-depending on your TV: 75Ohm matches impedance, 300Ohm matches standard for sync. Personally I use 75Ohm. My TV does not have any problems with all values between 75Ohm and 300Ohm!  
+depending on your TV: 75Ohm matches impedance, 421Ohm matches standard for sync (recommended). My TV does not have any problems with all values between 75Ohm and 421Ohm!  
   
 [4]  
 Just pic one (!) and do not buy all parts. If you use NTSC-cable schematic you have to short the three jumpers on the PCB.  
