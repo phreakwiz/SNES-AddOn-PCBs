@@ -26,7 +26,7 @@ additional parts for the 1Chip-SNES design:
 - 2x 0.1uF ceramic capacitor (SMD 0805 package; rated 25V or more)  
   
 - 2x 330 Ohms resistor (SMD 0805 package; 1/8 watts should be fine)  
-- 1x 1M Ohms resistor (SMD 0805 package; 1/8 watts should be fine)  
+- 2x 1M Ohms resistor (SMD 0805 package; 1/8 watts should be fine)  
   
 - 1x 17.734475MHz crystal (HC49 package; either SMD or THT) [*]
 - 1x 21.477273MHz crystal (HC49 package; either SMD or THT) [*]  
