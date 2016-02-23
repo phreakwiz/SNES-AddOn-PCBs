@@ -29,7 +29,7 @@ Component needed:
  - 1x THS7314 SOIC-8 package [board SNES_RGBAmp only]  
  - 1x THS7374 TSSOP-14 package [board SNES_RGBAmp_1Chip03+ only]  
   
- - 1x 22uF/6.3V tantalum capacitor type-C package  
+ - 1x 22uF/6.3V tantalum capacitor type-C package (typical: 6.00mm x 3.20mm) 
  - 1x 100nF/50V ceramic capacitor 0805 package  
   
  - 2x 1.3kOhm resistor 0805 package (0.125W, 1% tolerance should be fine) [1]  
@@ -43,18 +43,18 @@ Component needed:
  - 3x 47pF/50V ceramic capacitor 0805 package [board SNES_RGBAmp_1Chip03+ in SNES Mini / SFC Jr. only], [2]  
   
  - 1x (between 75Ohm and 421Ohm [3]) resistor 0805 package (0.125W, 1% tolerance should be fine)  
- - 1x 330uF/6.3V tantalum capacitor type-D package  
+ - 1x 220uF/6.3V or 330uF/6.3V tantalum capacitor type-D package (typical: 7.30mm x 4.30mm)  
   
 2.a) Additional parts for using NTSC-cable schematic [4,5]:  
  - 3x 75Ohm resistor 0805 package (0.125W, 1% tolerance should be fine)  
   
 2.b) Additional parts for using PAL-cable schematic [4,6]:  
  - 3x 39Ohm resistor 0805 package (0.125W, 1% tolerance should be fine)  
- - 3x 330uF/6.3V tantalum capacitor type-D package  
+ - 3x 220uF/6.3V or 330uF/6.3V tantalum capacitor type-D package (typical: 7.30mm x 4.30mm)  
   
 2.c) Additional parts for a cable with direct wiring RGB [4,5]:  
  - 3x 75Ohm resistor 0805 package (0.125W, 1% tolerance should be fine)  
- - 3x 330uF/6.3V tantalum capacitor type-D package  
+ - 3x 220uF/6.3V or 330uF/6.3V tantalum capacitor type-D package (typical: 7.30mm x 4.30mm)  
   
 -----------------------------------------------------------------------------------  
   

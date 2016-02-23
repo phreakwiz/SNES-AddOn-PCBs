@@ -22,7 +22,7 @@ Components needed:
 1. Parts for the PCB:  
  - 1x THS7314 SOIC-8 package   
   
- - 1x 22uF/6.3V tantalum capacitor type-C package  
+ - 1x 22uF/6.3V tantalum capacitor type-C package (typical: 6.00mm x 3.20mm)  
  - 1x 100nF/50V ceramic capacitor 0805 package  
   
  - 3x 82nF/50V ceramic capacitor 0805 package  
@@ -33,11 +33,11 @@ Components needed:
   
 2.b) Additional parts for using PAL-cable schematic [1]:  
  - 3x 39Ohm resistor 0805 package (0.125W, 1% tolerance should be fine) [2]  
- - 3x 330uF/6.3V tantalum capacitor type-D package  
+ - 3x 220uF/6.3V or 330uF/6.3V tantalum capacitor type-D package (typical: 7.30mm x 4.30mm)  
   
 2.c) Additional parts for a cable with direct wiring RGB [1]:  
  - 3x 75Ohm resistor 0805 package (0.125W, 1% tolerance should be fine)  
- - 3x 330uF/6.3V tantalum capacitor type-D package  
+ - 3x 3x 220uF/6.3V or 330uF/6.3V tantalum capacitor type-D package (typical: 7.30mm x 4.30mm)  
   
 3. Parts for the SNES mainboard:  
  - 3x 750Ohm resistor 0805 package (0.125W, 1% tolerance should be fine)  
