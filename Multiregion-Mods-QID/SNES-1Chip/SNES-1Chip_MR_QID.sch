@@ -2612,7 +2612,6 @@ Source: 008-0260-0_E.pdf</description>
 <part name="74*00" library="74xx-eu" deviceset="74*00" device="D" value=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="VCC2" library="supply1" deviceset="+5V" device="" value=""/>
 <part name="R1" library="snescart" deviceset="R0805" device="" value="R10k"/>
 <part name="R2" library="snescart" deviceset="R0805" device="" value="R220"/>
 <part name="R3" library="snescart" deviceset="R0805" device="" value="R220"/>
@@ -2680,7 +2679,6 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="74*00" gate="A" x="25.4" y="-53.34"/>
 <instance part="GND2" gate="1" x="124.46" y="-17.78"/>
 <instance part="GND3" gate="1" x="-78.74" y="-137.16"/>
-<instance part="VCC2" gate="1" x="7.62" y="-48.26"/>
 <instance part="R1" gate="G$1" x="-10.16" y="-17.78" rot="R90"/>
 <instance part="R2" gate="G$1" x="-81.28" y="-27.94" rot="R180"/>
 <instance part="R3" gate="G$1" x="-81.28" y="-35.56" rot="R180"/>
@@ -2887,11 +2885,6 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="VCC" gate="1" pin="+5V"/>
 <pinref part="U$4" gate="G$1" pin="1"/>
 </segment>
-<segment>
-<pinref part="VCC2" gate="1" pin="+5V"/>
-<pinref part="74*00" gate="A" pin="I0"/>
-<wire x1="7.62" y1="-50.8" x2="17.78" y2="-50.8" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -3081,8 +3074,9 @@ Source: 008-0260-0_E.pdf</description>
 <net name="N$14" class="0">
 <segment>
 <wire x1="48.26" y1="-45.72" x2="15.24" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="-45.72" x2="15.24" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-45.72" x2="15.24" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="74*00" gate="D" pin="I1"/>
+<wire x1="15.24" y1="-50.8" x2="15.24" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="-55.88" x2="15.24" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="-68.58" x2="45.72" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="74*00" gate="A" pin="I1"/>
@@ -3096,6 +3090,9 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="MODE" gate="1" pin="P"/>
 <junction x="-71.12" y="-20.32"/>
 <pinref part="IC1" gate="C" pin="I2"/>
+<pinref part="74*00" gate="A" pin="I0"/>
+<wire x1="17.78" y1="-50.8" x2="15.24" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="15.24" y="-50.8"/>
 </segment>
 </net>
 <net name="N$1" class="0">
