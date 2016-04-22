@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -162,6 +162,9 @@
 <pad name="P$3" x="-2.54" y="0" drill="0.8"/>
 <hole x="-3.81" y="3.95" drill="3.2"/>
 <hole x="3.81" y="3.95" drill="3.2"/>
+<text x="5.3975" y="0.9525" size="1.016" layer="22" ratio="13" rot="MR0">PLT131/T1/12</text>
+<text x="4.445" y="-1.905" size="0.8128" layer="22" ratio="15" rot="MR0">mounting side</text>
+<wire x1="-5.715" y1="-2.54" x2="5.715" y2="-2.54" width="0.1524" layer="22" style="shortdash"/>
 </package>
 <package name="LTDL-TX12S01B">
 <pad name="P$1" x="2.54" y="0" drill="0.8" shape="square" rot="R180"/>
@@ -180,18 +183,28 @@ TX12S01B</text>
 <text x="-1.905" y="-2.54" size="1.27" layer="48" font="vector" ratio="12">side</text>
 </package>
 <package name="PLT133/T10W">
-<pad name="P$1" x="2.54" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="0" y="0" drill="0.8"/>
-<pad name="P$3" x="-2.54" y="0" drill="0.8"/>
-<pad name="P$4" x="-2.54" y="2.63" drill="1.1"/>
-<pad name="P$5" x="2.54" y="2.63" drill="1.1"/>
-<wire x1="-5" y1="-2.39" x2="5" y2="-2.39" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-5" y1="-2.39" x2="-5" y2="11.11" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-5" y1="11.11" x2="5" y2="11.11" width="0.127" layer="21" style="shortdash"/>
-<wire x1="5" y1="11.11" x2="5" y2="-2.39" width="0.127" layer="21" style="shortdash"/>
-<text x="-3.175" y="5.08" size="1.016" layer="21" font="vector" ratio="15">PLT133/
+<pad name="P$1" x="-2.54" y="0" drill="0.8" shape="square" rot="R180"/>
+<pad name="P$2" x="0" y="0" drill="0.8" rot="R180"/>
+<pad name="P$3" x="2.54" y="0" drill="0.8" rot="R180"/>
+<pad name="P$4" x="2.54" y="2.63" drill="1.1" rot="R180"/>
+<pad name="P$5" x="-2.54" y="2.63" drill="1.1" rot="R180"/>
+<text x="-3.175" y="3.81" size="1.016" layer="21" font="vector" ratio="15">PLT133/
    T10W</text>
-<text x="-4.445" y="3.81" size="0.8128" layer="21" font="vector" ratio="15">mounting-side</text>
+<text x="-4.445" y="-1.905" size="0.8128" layer="21" font="vector" ratio="15">mounting-side</text>
+<wire x1="-4.445" y1="-2.54" x2="4.445" y2="-2.54" width="0.1524" layer="21" style="shortdash"/>
+</package>
+<package name="JT_OC-0808T*008">
+<pad name="P$1" x="2.54" y="0" drill="0.8" shape="square" rot="R180"/>
+<pad name="P$2" x="0" y="0" drill="0.8" rot="R180"/>
+<pad name="P$3" x="-2.54" y="0" drill="0.8" rot="R180"/>
+<pad name="P$4" x="2.54" y="2.63" drill="1.1" rot="R180"/>
+<pad name="P$5" x="-2.54" y="2.63" drill="1.1" rot="R180"/>
+<text x="0" y="7.62" size="1.016" layer="21" font="vector" ratio="15" align="center">JT OC0808</text>
+<text x="-4.445" y="-1.5875" size="0.8128" layer="21" font="vector" ratio="15">mounting-side</text>
+<wire x1="-4.445" y1="-1.8" x2="4.445" y2="-1.8" width="0.1524" layer="21" style="shortdash"/>
+<hole x="-2.8" y="5.24" drill="1.7"/>
+<hole x="2.8" y="5.24" drill="1.7"/>
+<wire x1="-4.445" y1="9" x2="4.445" y2="9" width="0.1524" layer="21" style="shortdash"/>
 </package>
 </packages>
 <symbols>
@@ -346,6 +359,23 @@ TX12S01B</text>
 <connect gate="G$1" pin="GND" pad="P$1"/>
 <connect gate="G$1" pin="VCC" pad="P$2"/>
 <connect gate="G$1" pin="VIN" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JT_OC0808">
+<gates>
+<gate name="G$1" symbol="PHOTOLINK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JT_OC-0808T*008">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$3"/>
+<connect gate="G$1" pin="VCC" pad="P$2"/>
+<connect gate="G$1" pin="VIN" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
