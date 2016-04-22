@@ -1,2 +1,5 @@
-Firmware SuperCIC:   https://sd2snes.de/blog/cool-stuff/supercic
-Firmware uIGR V2-V4: https://github.com/borti4938/Switchless-Mods/tree/master/SNES
+Firmware SuperCIC:   https://sd2snes.de/blog/cool-stuff/supercic  
+ (supercic-lock.hex can only be run on the PIC16F630, NOT on the PIC16F676/684)  
+(Mirror:             https://github.com/borti4938/Switchless-Mods/tree/master/SNES/CICs/lock  
+ (supercic-lock.hex at the mirror is suitable to run on the PIC16F630, 16F676 and 16F684)) 
+Firmware uIGR V2: https://github.com/borti4938/Switchless-Mods/tree/master/SNES
