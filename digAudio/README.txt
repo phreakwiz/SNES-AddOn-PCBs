@@ -19,4 +19,4 @@ CS8406-CSZ
 
 Audio Output:
 
-Optical SPDIF - Everlight IR-Fotolink 3-5V Plt131
+Optical SPDIF - Everlight IR-Fotolink 3-5V Plt133
