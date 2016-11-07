@@ -20,11 +20,11 @@ Component needed:
 2. Special components (read notes):  
 a) for 1Chip consoles (not Mini/Jr.)  
  - R11, R21, R31: [1]  
-   3x 1.2kOhm resistor 0603 package (0.125W, 1% tolerance should be fine)  
+   3x 750kOhm resistor 0603 package (0.125W, 1% tolerance should be fine)  
    
 b) for SNES Mini/Jr.
  - R11, R21, R31: [1]   
-   3x 750Ohm resistor 0603 package (0.125W, 1% tolerance should be fine)  
+   3x 1.2kOhm resistor 0603 package (0.125W, 1% tolerance should be fine)  
  - C14, C24, C34: [3]  
    - 3x 47pF/50V ceramic capacitor 0603 package  
   
