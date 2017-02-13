@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -348,26 +348,26 @@
 <pad name="60" x="3.6" y="37.5" drill="1" shape="square" rot="R180"/>
 <pad name="61" x="3.6" y="40" drill="1" shape="square" rot="R180"/>
 <pad name="62" x="3.6" y="42.5" drill="1" shape="square" rot="R180"/>
-<text x="-2.5" y="43.4375" size="1.016" layer="21" font="vector" ratio="12" rot="R270">31</text>
-<text x="2.5" y="41.5625" size="1.016" layer="21" font="vector" ratio="12" rot="R90">62</text>
-<text x="-2.5" y="35.9375" size="1.016" layer="21" font="vector" ratio="12" rot="R270">28</text>
-<text x="2.5" y="34.0625" size="1.016" layer="21" font="vector" ratio="12" rot="R90">59</text>
-<text x="-2.5" y="28.4375" size="1.016" layer="21" font="vector" ratio="12" rot="R270">27</text>
-<text x="2.5" y="26.5625" size="1.016" layer="21" font="vector" ratio="12" rot="R90">58</text>
-<text x="-2.5" y="23.4375" size="1.016" layer="21" font="vector" ratio="12" rot="R270">25</text>
-<text x="-2.5" y="10.9375" size="1.016" layer="21" font="vector" ratio="15" rot="R270">20</text>
-<text x="-2.5" y="-1.5625" size="1.016" layer="21" font="vector" ratio="12" rot="R270">15</text>
-<text x="-2.5" y="-14.0625" size="1.016" layer="21" font="vector" ratio="12" rot="R270">10</text>
-<text x="-2.5" y="-26.8875" size="1.016" layer="21" font="vector" ratio="12" rot="R270">5</text>
-<text x="-2.5" y="-34.3875" size="1.016" layer="21" font="vector" ratio="12" rot="R270">4</text>
-<text x="-2.5" y="-41.8625" size="1.016" layer="21" font="vector" ratio="12" rot="R270">1</text>
-<text x="2.5" y="-43.4375" size="1.016" layer="21" font="vector" ratio="12" rot="R90">32</text>
-<text x="2.5" y="-35.9375" size="1.016" layer="21" font="vector" ratio="12" rot="R90">35</text>
-<text x="2.5" y="-28.4375" size="1.016" layer="21" font="vector" ratio="12" rot="R90">36</text>
-<text x="2.5" y="-18.4375" size="1.016" layer="21" font="vector" ratio="12" rot="R90">40</text>
-<text x="2.5" y="-5.9375" size="1.016" layer="21" font="vector" ratio="12" rot="R90">45</text>
-<text x="2.5" y="6.5625" size="1.016" layer="21" font="vector" ratio="15" rot="R90">50</text>
-<text x="2.5" y="19.0625" size="1.016" layer="21" font="vector" ratio="12" rot="R90">55</text>
+<text x="-2.5" y="43.4375" size="1.016" layer="51" font="vector" ratio="12" rot="R270">31</text>
+<text x="2.5" y="41.5625" size="1.016" layer="51" font="vector" ratio="12" rot="R90">62</text>
+<text x="-2.5" y="35.9375" size="1.016" layer="51" font="vector" ratio="12" rot="R270">28</text>
+<text x="2.5" y="34.0625" size="1.016" layer="51" font="vector" ratio="12" rot="R90">59</text>
+<text x="-2.5" y="28.4375" size="1.016" layer="51" font="vector" ratio="12" rot="R270">27</text>
+<text x="2.5" y="26.5625" size="1.016" layer="51" font="vector" ratio="12" rot="R90">58</text>
+<text x="-2.5" y="23.4375" size="1.016" layer="51" font="vector" ratio="12" rot="R270">25</text>
+<text x="-2.5" y="10.9375" size="1.016" layer="51" font="vector" ratio="15" rot="R270">20</text>
+<text x="-2.5" y="-1.5625" size="1.016" layer="51" font="vector" ratio="12" rot="R270">15</text>
+<text x="-2.5" y="-14.0625" size="1.016" layer="51" font="vector" ratio="12" rot="R270">10</text>
+<text x="-2.5" y="-26.8875" size="1.016" layer="51" font="vector" ratio="12" rot="R270">5</text>
+<text x="-2.5" y="-34.3875" size="1.016" layer="51" font="vector" ratio="12" rot="R270">4</text>
+<text x="-2.5" y="-41.8625" size="1.016" layer="51" font="vector" ratio="12" rot="R270">1</text>
+<text x="2.5" y="-43.4375" size="1.016" layer="51" font="vector" ratio="12" rot="R90">32</text>
+<text x="2.5" y="-35.9375" size="1.016" layer="51" font="vector" ratio="12" rot="R90">35</text>
+<text x="2.5" y="-28.4375" size="1.016" layer="51" font="vector" ratio="12" rot="R90">36</text>
+<text x="2.5" y="-18.4375" size="1.016" layer="51" font="vector" ratio="12" rot="R90">40</text>
+<text x="2.5" y="-5.9375" size="1.016" layer="51" font="vector" ratio="12" rot="R90">45</text>
+<text x="2.5" y="6.5625" size="1.016" layer="51" font="vector" ratio="15" rot="R90">50</text>
+<text x="2.5" y="19.0625" size="1.016" layer="51" font="vector" ratio="12" rot="R90">55</text>
 <text x="-5" y="45" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="0.6625" y="1.25" size="1.27" layer="27" font="vector" ratio="10" rot="R90">&gt;VALUE</text>
 <wire x1="-4.375" y1="43.593875" x2="4.375" y2="43.593875" width="0.127" layer="21"/>
@@ -504,14 +504,14 @@
 <wire x1="-2.54" y1="-0.508" x2="-2.54" y2="-1.5748" width="0.1524" layer="21"/>
 <wire x1="-2.54" y1="0.508" x2="-2.54" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-2.54" y1="-1.6002" x2="2.54" y2="-1.6002" width="0.0508" layer="21"/>
-<smd name="1" x="-1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="2" x="-0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="3" x="0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="4" x="1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="5" x="1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1" rot="R180"/>
-<smd name="6" x="0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1" rot="R180"/>
-<smd name="7" x="-0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1" rot="R180"/>
-<smd name="8" x="-1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="1" x="-1.905" y="-2.7559" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-0.635" y="-2.7559" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="0.635" y="-2.7559" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="1.905" y="-2.7559" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="1.905" y="2.7559" dx="0.6604" dy="2.032" layer="1" rot="R180"/>
+<smd name="6" x="0.635" y="2.7559" dx="0.6604" dy="2.032" layer="1" rot="R180"/>
+<smd name="7" x="-0.635" y="2.7559" dx="0.6604" dy="2.032" layer="1" rot="R180"/>
+<smd name="8" x="-1.905" y="2.7559" dx="0.6604" dy="2.032" layer="1"/>
 <text x="4.572" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <text x="-2.921" y="-1.905" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <rectangle x1="-2.159" y1="-3.0988" x2="-1.651" y2="-1.9558" layer="51"/>
@@ -536,14 +536,14 @@
 <wire x1="-2.54" y1="-0.508" x2="-2.54" y2="-1.5748" width="0.1524" layer="21"/>
 <wire x1="-2.54" y1="0.508" x2="-2.54" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-2.54" y1="-1.6002" x2="2.54" y2="-1.6002" width="0.0508" layer="21"/>
-<smd name="1" x="-1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="2" x="-0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="3" x="0.635" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="4" x="1.905" y="-3.0734" dx="0.6604" dy="2.032" layer="1"/>
-<smd name="5" x="1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1" rot="R180"/>
-<smd name="6" x="0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1" rot="R180"/>
-<smd name="7" x="-0.635" y="3.0734" dx="0.6604" dy="2.032" layer="1" rot="R180"/>
-<smd name="8" x="-1.905" y="3.0734" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="1" x="-1.905" y="-2.7559" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-0.635" y="-2.7559" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="0.635" y="-2.7559" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="1.905" y="-2.7559" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="1.905" y="2.7559" dx="0.6604" dy="2.032" layer="1" rot="R180"/>
+<smd name="6" x="0.635" y="2.7559" dx="0.6604" dy="2.032" layer="1" rot="R180"/>
+<smd name="7" x="-0.635" y="2.7559" dx="0.6604" dy="2.032" layer="1" rot="R180"/>
+<smd name="8" x="-1.905" y="2.7559" dx="0.6604" dy="2.032" layer="1"/>
 <text x="4.572" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <text x="-2.921" y="-1.905" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <rectangle x1="-2.159" y1="-3.0988" x2="-1.651" y2="-1.9558" layer="51"/>
@@ -982,6 +982,28 @@
 <rectangle x1="-0.8" y1="2.225" x2="-0.5" y2="3.2" layer="51" rot="R180"/>
 <rectangle x1="-1.45" y1="2.225" x2="-1.15" y2="3.2" layer="51" rot="R180"/>
 <rectangle x1="-2.1" y1="2.225" x2="-1.8" y2="3.2" layer="51" rot="R180"/>
+</package>
+<package name="SNES_MULTIAV_RGBSYC">
+<pad name="P$1" x="6.35" y="-1.27" drill="1" shape="square" rot="R270"/>
+<pad name="P$2" x="6.35" y="1.27" drill="1" rot="R270"/>
+<pad name="P$3" x="3.81" y="-1.27" drill="1" rot="R270"/>
+<pad name="P$4" x="3.81" y="1.27" drill="1" rot="R270"/>
+<pad name="P$5" x="1.27" y="-1.27" drill="1" rot="R270"/>
+<pad name="P$6" x="1.27" y="1.27" drill="1" rot="R270"/>
+<pad name="P$10" x="-3.81" y="1.27" drill="1" rot="R270"/>
+<wire x1="-6.35" y1="2.2225" x2="6.35" y2="2.2225" width="0.127" layer="21"/>
+<wire x1="6.35" y1="2.2225" x2="7.3025" y2="1.27" width="0.127" layer="21" curve="-90"/>
+<wire x1="7.3025" y1="1.27" x2="7.3025" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="7.3025" y1="-1.905" x2="6.985" y2="-2.2225" width="0.127" layer="21" curve="-90"/>
+<wire x1="6.985" y1="-2.2225" x2="-6.35" y2="-2.2225" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-2.2225" x2="-7.3025" y2="-1.27" width="0.127" layer="21" curve="-90"/>
+<wire x1="-7.3025" y1="-1.27" x2="-7.3025" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-7.3025" y1="1.27" x2="-6.35" y2="2.2225" width="0.127" layer="21" curve="-90"/>
+<hole x="-3.81" y="-1.27" drill="1"/>
+<hole x="-6.35" y="-1.27" drill="1"/>
+<hole x="-6.35" y="1.27" drill="1"/>
+<pad name="C" x="-1.27" y="1.27" drill="1" rot="R270"/>
+<pad name="Y" x="-1.27" y="-1.27" drill="1" rot="R270"/>
 </package>
 </packages>
 <symbols>
@@ -1432,6 +1454,18 @@
 <pin name="CO4" x="12.7" y="-2.54" length="middle" rot="R180"/>
 <pin name="/CE" x="-12.7" y="-7.62" length="middle"/>
 <pin name="BYP" x="12.7" y="-7.62" length="middle" rot="R180"/>
+</symbol>
+<symbol name="SNES_MULTIAV_RGBSYC">
+<pin name="RED" x="-10.16" y="2.54" length="middle"/>
+<pin name="GREEN" x="-10.16" y="0" length="middle"/>
+<pin name="/CS" x="-10.16" y="-5.08" length="middle"/>
+<pin name="BLUE" x="-10.16" y="-2.54" length="middle"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="Y" x="-10.16" y="-10.16" length="middle"/>
+<pin name="C" x="-10.16" y="-12.7" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2134,6 +2168,31 @@
 <connect gate="G$1" pin="CO4" pad="11"/>
 <connect gate="G$2" pin="GND" pad="5"/>
 <connect gate="G$2" pin="VCC" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SNES_MULTIAV_RGBSYC">
+<gates>
+<gate name="G$2" symbol="PWR_MULTIAV_GND" x="10.16" y="-7.62"/>
+<gate name="G$3" symbol="PWR" x="15.24" y="0"/>
+<gate name="G$1" symbol="SNES_MULTIAV_RGBSYC" x="-2.54" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="SNES_MULTIAV_RGBSYC">
+<connects>
+<connect gate="G$1" pin="/CS" pad="P$3"/>
+<connect gate="G$1" pin="BLUE" pad="P$4"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="GREEN" pad="P$2"/>
+<connect gate="G$1" pin="RED" pad="P$1"/>
+<connect gate="G$1" pin="Y" pad="Y"/>
+<connect gate="G$2" pin="GND" pad="P$5"/>
+<connect gate="G$3" pin="GND" pad="P$6"/>
+<connect gate="G$3" pin="VCC" pad="P$10"/>
 </connects>
 <technologies>
 <technology name=""/>

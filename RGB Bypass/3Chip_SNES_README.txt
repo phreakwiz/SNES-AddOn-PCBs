@@ -1,7 +1,7 @@
-##################################################################  
-# SNES_RGBAmp: for all 3Chip boards                              #  
-# SNES_RGBAmp_wCSYNC: possible on 3Chip boards (see description) #  
-##################################################################  
+##################################################################################  
+# SNES_RGBAmp: for all 3Chip boards                                              #  
+# SNES_RGBAmp_wCSYNC: possible on 3Chip boards (but not tested / described here) #  
+##################################################################################  
   
   
 INTSTALLATION MAY DIFFER FROM MAINBOARD VERSION TO MAINBOARD VERSION!  
@@ -13,13 +13,18 @@ If I have a reference url, I will give it.
   
 -----------------------------------------------------------------------------------  
   
-### Jumper J1 - Low Pass Filter of the THS7374 ###  
+### Jumper J1 - Low Pass Filter of the THS7373 / THS7374 ###  
 
-The Jumper 1 is for bypassing the internal filter of the THS7374.  
-- leave J1 open: internal filter of EACH channel is NOT bypassed  
-- close J1: internal filter of EACH channel is bypassed  
+Both ICs are supported. The THS7373 has one SD-video low pass filter (used for /CSYNC) and three HD-video filters (used for R, G and B). The THS7374 has four SD-video filters.  
+At the THS7373 the HD-video LPFs can be bypassed and at the THS7374 all four SD-video filters can be bypassed (using J1).  
   
-It is not possible to set the four channel low pass filters independently!  
+The Jumper 1 is for bypassing the internal low pass filters.  
+- leave J1 open: internal filters are NOT bypassed  
+- close J1: internal filters are bypassed (not effective for the SD-video channel of the THS7373)   
+  
+It is not possible to set the three HD-video (THS7373) or four SD-video (THS7374) low pass filters independently!  
+  
+Note: This jumper has no effect if you use a THS7316 or THS7314!  
   
 -----------------------------------------------------------------------------------  
   
