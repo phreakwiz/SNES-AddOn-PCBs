@@ -16,7 +16,7 @@ Component needed:
  - C11, C21, C31:  
      3x 82nF/25V ceramic capacitor 0603 package   
  - R12, R22, R32:  
-     3x 3.6MOhm resistor 0603 package (0.125W, 1% tolerance should be fine)  
+     3x 5.1MOhm resistor 0603 package (0.125W, 1% tolerance should be fine)  
   
 2. Special components (read notes):  
 a) for 1Chip consoles (not Mini/Jr.)  

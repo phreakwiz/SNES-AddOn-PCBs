@@ -12589,9 +12589,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R11" library="rcl" deviceset="R-EU_" device="R0603"/>
 <part name="R21" library="rcl" deviceset="R-EU_" device="R0603"/>
 <part name="R31" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R12" library="rcl" deviceset="R-EU_" device="R0603" value="3M6"/>
-<part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="3M6"/>
-<part name="R32" library="rcl" deviceset="R-EU_" device="R0603" value="3M6"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="R0603" value="5M1"/>
+<part name="R22" library="rcl" deviceset="R-EU_" device="R0603" value="5M1"/>
+<part name="R32" library="rcl" deviceset="R-EU_" device="R0603" value="5M1"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0603"/>
 <part name="R23" library="rcl" deviceset="R-EU_" device="R0603"/>
 <part name="R33" library="rcl" deviceset="R-EU_" device="R0603"/>
