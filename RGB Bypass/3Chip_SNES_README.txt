@@ -1,7 +1,7 @@
-##################################################################################  
-# SNES_RGBAmp: for all 3Chip boards                                              #  
-# SNES_RGBAmp_wCSYNC: possible on 3Chip boards (but not tested / described here) #  
-##################################################################################  
+########################################################################################  
+# SNES_RGBAmp: for all 3Chip boards                                                    #  
+# SNES_RGBAmp_wCSYNC: possible on 3Chip boards (but not tested and not described here) #  
+########################################################################################  
   
   
 INTSTALLATION MAY DIFFER FROM MAINBOARD VERSION TO MAINBOARD VERSION!  
