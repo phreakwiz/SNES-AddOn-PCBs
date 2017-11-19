@@ -50,12 +50,15 @@ If you want to /CSYNC from the modding board you also have to ensure that pin 3 
 
 #### Decoupling caps at the MultiAV
 
-There are some 47pF ceramic capacitors at the MultiAV at pin 1 - 4, namely C44 (pin 1), C45 (pin 2), C46 (pin 3) and C47 (pin 4). **[2]**  
+There are some 47pF ceramic capacitors at the MultiAV at pin 1 - 4, namely C44 (pin 1), C45 (pin 2), C46 (pin 3) and C47 (pin 4). 
 There are also some footprints for 47pF ceramic capacitors on the modding board , namely C14, C24, C34 and C44.  
-Make sure that you either have for each pin at the MultiAV just a single cap installed. If you unsure, just left the footprints on the MultiAV free as these caps are optional.
+Make sure that you either have for each pin at the MultiAV just a single cap installed. **If you unsure, just left the footprints on the MultiAV free as these caps are optional.**
 
-**Note [2]**  
-1Chip-03 and the SNES2, both versions do not have C46 installed.
+**To sum up:**
+
+- **1Chip-01/02** versions have all capacitors C44-C47 on board. So left C14-C44 on the modding board unpopulated.
+- **1Chip-03** versions does not have C46 installed. So you can put C44 onto the modding board. C44 is directly next to R43.
+- **SNES2** version do not C44-C47. This version even does not have footprints for them. So assemble C14-C44 on the modding board.
 
 #### Board installation
 
