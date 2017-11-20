@@ -113,7 +113,9 @@ Actually, all my consoles outputs true 75ohm csync (not approximately as others 
 And I went fine with it. I can run my OSSC without any problems, a Framemeister I borrowed a few weeks ago, went run fine, too :)
 I even don't have to use sync filtering... 
 
-#### Ghosting and Brightness Issues 
+#### Brightness and Ghosting Issues 
+
+##### Brightness
 
 The S-CPUN overdrives the outputs of R, G and B. This has the effect that R', G' and B' (signals going to your TV set) have higher peak-to-peak voltage values than the standard defines. In simple word, the **brightness is to high**.
 
@@ -125,14 +127,16 @@ RetroRGB summarizes the final solution:
 
 The resistors, which are soldered to the SNES mainboard, got a place on the modding PCB (R11, R21 and R31). You may want to the SMD 0603 footprints for the resistors correcting the brightness, here.
 
-Alternatively, you can adapt R3 on the SNES mainboard. This is a 1.6k Ohm resistor in SMD0805 (big model) or SMD0603 (SNES2) size.
+**Alternatively**, you can adapt R3 on the SNES mainboard. This is a 1.6k Ohm resistor in SMD0805 (big model) or SMD0603 (SNES2) size.
 From my measurements, replacing this resistor
 
 - by a **1.74k Ohm** resistor in a big model SNES, and
 - by a **1.69k Ohm** resistor in a SNES2 (Mini/Jr.)  
   (Just an estiamtion, I hadn't had a SNES2 for measurements here, so far)
 
-seems to be a good choice.
+seems to be a good choice. **By replacing R3 on the SNES mainboard** you must not use the brightness correction resistors R11, R21 and R31 on the modding board.
+
+##### Ghosting
 
 Also some consoles have some output swing on changes of the output amplitude. These swing can be +/- 10mV to 20mV in peak-to-peak and runs over several pixels width. This results into **ghosting**.
 
