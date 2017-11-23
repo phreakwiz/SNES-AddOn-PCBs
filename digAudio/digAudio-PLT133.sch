@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -178,13 +178,10 @@
 <pad name="P$3" x="2.54" y="0" drill="0.8" rot="R180"/>
 <pad name="P$4" x="2.54" y="2.63" drill="1.1" rot="R180"/>
 <pad name="P$5" x="-2.54" y="2.63" drill="1.1" rot="R180"/>
-<wire x1="-5" y1="-2.39" x2="5" y2="-2.39" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-5" y1="-2.39" x2="-5" y2="11.11" width="0.127" layer="21" style="shortdash"/>
-<wire x1="-5" y1="11.11" x2="5" y2="11.11" width="0.127" layer="21" style="shortdash"/>
-<wire x1="5" y1="11.11" x2="5" y2="-2.39" width="0.127" layer="21" style="shortdash"/>
-<text x="-3.175" y="5.08" size="1.016" layer="21" font="vector" ratio="15">PLT133/
+<text x="-3.175" y="3.81" size="1.016" layer="21" font="vector" ratio="15">PLT133/
    T10W</text>
-<text x="-4.445" y="3.81" size="0.8128" layer="21" font="vector" ratio="15">mounting-side</text>
+<text x="-4.445" y="-1.905" size="0.8128" layer="21" font="vector" ratio="15">mounting-side</text>
+<wire x1="-4.445" y1="-2.54" x2="4.445" y2="-2.54" width="0.1524" layer="21" style="shortdash"/>
 </package>
 </packages>
 <symbols>
