@@ -72,6 +72,53 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
+<library name="cs8406">
+<packages>
+<package name="JT_OC-0808T*008">
+<pad name="P$1" x="2.54" y="0" drill="0.8" shape="square" rot="R180"/>
+<pad name="P$2" x="0" y="0" drill="0.8" rot="R180"/>
+<pad name="P$3" x="-2.54" y="0" drill="0.8" rot="R180"/>
+<pad name="P$4" x="2.54" y="2.63" drill="1.1" rot="R180"/>
+<pad name="P$5" x="-2.54" y="2.63" drill="1.1" rot="R180"/>
+<text x="0" y="7.62" size="1.016" layer="21" font="vector" ratio="15" align="center">JT OC0808</text>
+<text x="-4.445" y="-1.5875" size="0.8128" layer="21" font="vector" ratio="15">mounting-side</text>
+<wire x1="-4.445" y1="-1.8" x2="4.445" y2="-1.8" width="0.1524" layer="21" style="shortdash"/>
+<hole x="-2.8" y="5.24" drill="1.7"/>
+<hole x="2.8" y="5.24" drill="1.7"/>
+<wire x1="-4.445" y1="9" x2="4.445" y2="9" width="0.1524" layer="21" style="shortdash"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PHOTOLINK">
+<pin name="GND" x="-5.08" y="5.08" length="middle"/>
+<pin name="VCC" x="-5.08" y="0" length="middle"/>
+<pin name="VIN" x="-5.08" y="-5.08" length="middle"/>
+<wire x1="0" y1="7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JT_OC0808">
+<gates>
+<gate name="G$1" symbol="PHOTOLINK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JT_OC-0808T*008">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$3"/>
+<connect gate="G$1" pin="VCC" pad="P$2"/>
+<connect gate="G$1" pin="VIN" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 <library name="wirepad">
 <description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -3712,51 +3759,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="cs8406">
-<packages>
-<package name="PLT133/T10W">
-<pad name="P$1" x="-2.54" y="0" drill="0.8" shape="square" rot="R180"/>
-<pad name="P$2" x="0" y="0" drill="0.8" rot="R180"/>
-<pad name="P$3" x="2.54" y="0" drill="0.8" rot="R180"/>
-<pad name="P$4" x="2.54" y="2.63" drill="1.1" rot="R180"/>
-<pad name="P$5" x="-2.54" y="2.63" drill="1.1" rot="R180"/>
-<text x="-3.175" y="3.81" size="1.016" layer="21" font="vector" ratio="15">PLT133/
-   T10W</text>
-<text x="-4.445" y="-1.905" size="0.8128" layer="21" font="vector" ratio="15">mounting-side</text>
-<wire x1="-4.445" y1="-2.54" x2="4.445" y2="-2.54" width="0.1524" layer="21" style="shortdash"/>
-</package>
-</packages>
-<symbols>
-<symbol name="PLT133/T10W">
-<pin name="GND" x="-7.62" y="5.08" length="middle"/>
-<pin name="VCC" x="-7.62" y="0" length="middle"/>
-<pin name="VIN" x="-7.62" y="-5.08" length="middle"/>
-<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PLT133/T10W">
-<gates>
-<gate name="G$1" symbol="PLT133/T10W" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PLT133/T10W">
-<connects>
-<connect gate="G$1" pin="GND" pad="P$1"/>
-<connect gate="G$1" pin="VCC" pad="P$2"/>
-<connect gate="G$1" pin="VIN" pad="P$3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3784,7 +3786,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="2" library="wirepad" deviceset="SMD1" device="" value=""/>
 <part name="3" library="wirepad" deviceset="SMD1" device="" value=""/>
 <part name="1" library="wirepad" deviceset="SMD1" device="" value=""/>
-<part name="U$1" library="cs8406" deviceset="PLT133/T10W" device=""/>
+<part name="U$1" library="cs8406" deviceset="JT_OC0808" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3814,7 +3816,7 @@ S-APU:16|94|93|92|52</text>
 <instance part="2" gate="G$1" x="-17.78" y="38.1"/>
 <instance part="3" gate="G$1" x="-20.32" y="35.56"/>
 <instance part="1" gate="G$1" x="45.72" y="33.02" rot="R180"/>
-<instance part="U$1" gate="G$1" x="68.58" y="45.72"/>
+<instance part="U$1" gate="G$1" x="66.04" y="45.72"/>
 </instances>
 <busses>
 </busses>
