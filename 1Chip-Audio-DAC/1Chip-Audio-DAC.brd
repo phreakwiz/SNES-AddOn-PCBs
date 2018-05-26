@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.2">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -71,7 +71,7 @@
 <board>
 <plain>
 <text x="1.651" y="9.271" size="1.016" layer="25" font="vector" ratio="15">U1</text>
-<text x="-7.493" y="8.509" size="1.016" layer="25" font="vector" ratio="15">U2:51</text>
+<text x="-7.493" y="8.509" size="1.016" layer="25" font="vector" ratio="15">U2:52</text>
 <text x="-4.064" y="3.556" size="1.016" layer="25" font="vector" ratio="15" rot="R90">C1</text>
 <text x="-6.223" y="3.556" size="1.016" layer="25" font="vector" ratio="15" rot="R90">C2</text>
 <wire x1="-2.54" y1="2.794" x2="-2.54" y2="-2.794" width="0.2032" layer="21"/>
@@ -1535,14 +1535,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="3.048" y1="5.461" x2="3.048" y2="0.635" width="0.254" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="7,39,c29800600078c280"/>
-<approved hash="7,39,bee05c2717a18d33"/>
-<approved hash="7,39,bee86bc8a0710d3e"/>
-<approved hash="7,39,a977ff79e3a14db2"/>
-<approved hash="7,39,0a7c160416170a6f"/>
-<approved hash="7,39,a6f0c15b5df2c23f"/>
-</errors>
 </board>
 </drawing>
 <compatibility>

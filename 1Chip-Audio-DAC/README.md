@@ -25,7 +25,7 @@ At the moment I don't know whether the boards fits (mechanically) into a SNES mo
   - p6: U2 pin 93 (DATA)
   - p7: U2 pin 92 (SCLK)
   - p8: Vcc (+5V)
-- connect pad labeld by _U2:51_ with U2 pin 51 (also extension port pin 21)
+- connect pad labeld by _U2:52_ with U2 pin 52 (also extension port pin 21)
 
 
 ### BOM
@@ -36,7 +36,7 @@ At the moment I don't know whether the boards fits (mechanically) into a SNES mo
 
 ### PCB
 
-Get your PCB from [OSHPark](https://oshpark.com/shared_projects/GsUm7wCO) or anywhere you like.  
+Get your PCB from [OSHPark](https://oshpark.com/shared_projects/qMppLcDq) or anywhere you like.  
 To smoothen the installation, choose a substrate thickness as thin as possible.
 
 ## ENJOY!!!
