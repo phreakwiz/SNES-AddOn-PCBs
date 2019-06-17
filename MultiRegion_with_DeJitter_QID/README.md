@@ -148,7 +148,7 @@ This is not a complete installation manual. It's moreover a general overview on 
 ###### General Steps
 
 - remove original CIC-lock (or at least lift pins 1, 2, 10 and 11)
-- remove LED from front panal (large SNES only)
+- remove LED from front panel (large SNES only)
 
 
 ###### Specific Steps for 1Chip-SNES
