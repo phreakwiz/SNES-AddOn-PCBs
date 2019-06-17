@@ -1,3 +1,11 @@
+## Multi-Region Mod for any SNES
+
+**Free your SNES**
+
+![](./pics/pcb_project.jpg)
+
+(picture shows last prototype PCB installed on a SNS-CPU-RGB-01)
+
 ### Acknowledgement and Licensing
 
 This PCB, its idea and design, is a confluence of multiple projects. All credits and rights are going to their respective creators:
