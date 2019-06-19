@@ -5,8 +5,9 @@
 - remove power LED
 - remove original CIC-lock (or at least lift pins 1, 2, 10 and 11)  
   ![](./CIC-lock.jpg)
-  - if you remove the CIC-lock, you can also remove C9
-
+  
+- if you remove the CIC-lock, you can also remove C9
+  
 - lift pin 24 of S-PPU1 and pin 30 of S-PPU2  
   ![](./S-PPUs.jpg)
 
@@ -24,6 +25,9 @@
 ### Installation of PCB
 
 - Solder PCB in place under the cartridge slot. Be aware of the orientation (pin marking must match)
+  - solder the PCB to the top of the slot pins such that there is a small between SNES mainboard and modding board  
+    (which is easy to do if you ordered the PCB in 0.8mm thickness)  
+    (or simply insulate the PCB with some tape at the bottom)
   - make sure that all connections are well flowed
   - especially pin 5 and 36 might be difficult or need more power due to large heat capacity of the underlying GND plane
 - put the replacement dual LED where the original was (use a small piece of hot glue if needed) and connect the common pole to either _Ground_ or _Vcc_ (common cathod or anode, respectively)  
@@ -31,7 +35,7 @@
   (Picture shows a bi-color LED with common cathode and cables for red and green attached)
   - it's a good idea to connect red and green to _LED.Re_ and _LED.Gr_ once everything is finished
   - be aware of the SNES housing (if you still use the original one of this SNES mainboard), where a stability bridge is placed at the SNES mainboard front with just a cut out under the front panel connector
-- connect _Rst.i_ and _Rst.o_ to CIC-lock footprint pin 8 and 10, respectively
+- connect _Rst.i_ and _Rst.o_ (either pad) to CIC-lock footprint pin 8 and 10, respectively
 - connect _Ctrl.port.10-6_ to front panel connector pins 10 - 6
 - connect _Vmode_ to lifted pins 24 and 30 of the S-PPUs
 - connect _/CS.i_ to pin 100 of S-PPU2
