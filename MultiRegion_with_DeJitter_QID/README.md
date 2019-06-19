@@ -119,7 +119,9 @@ Use the DFO programmer to flash the PLL. The [DFO readme](./dfo/SOURCE.md) descr
 
 #### Manufacturing the PCB
 
-You can choose any manufacturer which you prefer. All files for manufacturing including the design files are provided in subfolder [gerber/pcb](./gerber/pcb). For using the OSHPark service, you can use the Gerbers provided in [gerber/pcb.oshpark_legacy](./gerber/pcb.oshpark_legacy/) or you can simply use my [uploaded project](https://oshpark.com/shared_projects/6n0e1VDd).
+You can choose any manufacturer which you prefer. All files for manufacturing including the design files are provided in subfolder [gerber/pcb/](./gerber/pcb/). As the PCB is designed in EAGLE (current version 7.4.2), gerbers are exported in the actual format. However, some services have problem while automatically analyze those like OSHPark or JCLPCB. Please try the older format in [gerber/pcb.eagle_legacy_export/](./gerber/pcb.eagle_legacy_export/).
+
+For using the OSHPark service, you can also use my [uploaded project](https://oshpark.com/shared_projects/6n0e1VDd).
 
 **IMPORTANT**
 Please use a substrate thickness of 0.8mm in order to make installation easier.
