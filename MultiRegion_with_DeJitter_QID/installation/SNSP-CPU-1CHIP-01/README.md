@@ -46,6 +46,7 @@ Note that this installation guide shows pictures with a prototype version of the
   (there is a via next to it - just follow the trace)   
   (from bottom the silk screen mark of C6 is next to the via; see picture below (section csync to multiout))
 - connect one of the _/CS.o (raw)_ pads to the lifted pin 7 of the S-RGB
+- connect _/Vmode_ to the lifted pin 9 of the S-RGB
 - leave _SJ32_ and _SJ61_  open!
 
 ### Color Carrier
