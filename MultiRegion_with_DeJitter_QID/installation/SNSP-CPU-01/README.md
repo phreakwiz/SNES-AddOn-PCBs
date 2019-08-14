@@ -1,4 +1,4 @@
-## SNS-CPU-01
+## SNSP-CPU-01 and SNSP-CPU-02
 
 ### Preparation
 

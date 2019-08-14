@@ -1,4 +1,4 @@
-## SNS-CPU-01
+## SNS-CPU-RGB-01
 
 ### Preparation
 

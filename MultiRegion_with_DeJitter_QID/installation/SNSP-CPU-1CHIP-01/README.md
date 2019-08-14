@@ -1,4 +1,4 @@
-## SNSP-1CHIP-01 and SNSP-1CHIP-02
+## SNSP-CPU-1CHIP-01 and SNSP-CPU-1CHIP-02
 
 Note that this installation guide shows pictures with a prototype version of the modding PCB where some pads are placed differently and others are simply not present compared to the final version.
 
