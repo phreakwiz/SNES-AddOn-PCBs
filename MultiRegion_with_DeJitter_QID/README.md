@@ -102,7 +102,7 @@ Use a PICKit, TL866CS or similar programmer.
 - **U3:** EPM7032 CPLD with clock switch, region patch and de-jitter firmware. You have to choose the right one depending on your modding board version.
 
   - [Version SMR20190813 (and later)](https://github.com/borti4938/snes_dejitter/blob/regionpatch+dejitter/output_files/multi_func/multi_function.pof?raw=true)
-  - [Version SMR20190509 and earlier](https://github.com/borti4938/snes_dejitter/blob/regionpatch+dejitter/output_files/multi_func_legacy/multi_func_legacy.pof?raw=true)
+  - [Version SMR20190603 and earlier](https://github.com/borti4938/snes_dejitter/blob/regionpatch+dejitter/output_files/multi_func_legacy/multi_func_legacy.pof?raw=true)
 
 Use an Altera USB Blaster (or clone) for flashing the firmware.
 
