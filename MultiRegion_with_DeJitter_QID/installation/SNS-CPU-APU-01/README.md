@@ -21,7 +21,8 @@ With the help of the modding PCB you can switch between PAL and NTSC color carri
   ![](./nvmode.jpg)
 - remove R4 and R59, which are a 0ohm jumper and a 470ohm resistor. You need the 470ohm resistor of R59
 - connect the _CClk.o_ pad over the 470ohm resistor (or any replacement resistor) to the right pad of R4 footprint as shown  
-  ![](CCLK_connection.jpg)
+  ![](CCLK_connection.jpg)  
+  **Note:** Since modding board version SMR20190813 you can place the 470ohm resistor on the modding board. The footprint it labeled _R62_.
 - solder the GND shielding to _GND_ pad of the modding board
   (I also soldered the GND shielding to the left pin of R4, which is not needed at all (it's just the connection between R4 and R59))
 

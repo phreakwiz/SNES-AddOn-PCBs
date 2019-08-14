@@ -37,7 +37,8 @@
   on this mainboard version, it's a good idea to connect _Rst.i_ and _Rst.o_ to the reset button and a test-point as shown
 - connect _Ctrl.port.10-6_ to front panel connector pins 10 - 6
 - connect _Vmode_ to lifted pins 24 and 30 of the S-PPUs
-- connect _/CS.i_ to pin 100 of S-PPU2 (see picture above)
+- connect _/CS.i_ to pin 100 of S-PPU2 (see picture above)  
+  (since SMR20190813 you have a second _/CS.i_ pad which you can use)
 - connect one of the _/CS.o (raw)_ pads to the lifted pin 8 of the S-ENC (see picture above)
 - either close _SJ11_ or connect _Clk.CIC_ to CIC-lock footprint pin 7 or right pad of C4 as shown  
   ![](./basic_connections.jpg)
@@ -67,6 +68,7 @@ With the help of the modding PCB you can switch between PAL and NTSC color carri
 - lift pin 5 of the S-CLK
 - connect the _CClk.o_ pad to the pad of the lifted pin  
   ![](CCLK_connection.jpg)
+- since SMR20190813 you have to short R62
 
 
 

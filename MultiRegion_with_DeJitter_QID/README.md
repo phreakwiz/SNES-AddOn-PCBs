@@ -70,7 +70,7 @@ These are just general descriptions of the in- and outputs. Please refer to the 
   Output for the (de-jittered) master clock of the SNES. This is approx. 21.477MHz in NTSC mode and appr. 17.734MHz (1Chip-SNES, SJ32 not set) or appr. 21.281MHz (non-1Chip, SJ32 set) in PAL mode. Please refer to the general installation note to see whether and how to connect this pad properly.
 - **CClk.o:** (output)
   Output of the color carrier, which is appr. 3.380MHz in NTSC mode and appr. 4.433MHz in PAL mode. Please refer to the general installation note to see whether and how to connect this pad properly.
-- **/CS.i:** (input)
+- **/CS.i:** (input (2x since SMR20190813)
   Input of the 'original' (non-de-jittered) composite sync. This comes from pin 100 S-PPU2 or pin 151 S-CPUN.
 - **/CS.o buf:** (output)
   Buffered (de-jittered) composite sync output. This is meant to be connected directly to the multiout pin 3. Note: The PAL SNES has 12V connected to this pin, which has to be removed.
@@ -99,7 +99,10 @@ Use a PICKit, TL866CS or similar programmer.
 ![](./pics/programmer_microchip_uc.jpg)
 
 
-- **U3:** EPM7032 CPLD with [clock switch, region patch and de-jitter firmware](https://github.com/borti4938/snes_dejitter/blob/regionpatch+dejitter/output_files/multi_function.pof?raw=true)
+- **U3:** EPM7032 CPLD with clock switch, region patch and de-jitter firmware. You have to choose the right one depending on your modding board version.
+
+  - [Version SMR20190813 (and later)](https://github.com/borti4938/snes_dejitter/blob/regionpatch+dejitter/output_files/multi_func/multi_function.pof?raw=true)
+  - [Version SMR20190509 and earlier](https://github.com/borti4938/snes_dejitter/blob/regionpatch+dejitter/output_files/multi_func_legacy/multi_func_legacy.pof?raw=true)
 
 Use an Altera USB Blaster (or clone) for flashing the firmware.
 
@@ -121,7 +124,7 @@ Use the DFO programmer to flash the PLL. The [DFO readme](./dfo/SOURCE.md) descr
 
 You can choose any manufacturer which you prefer. All files for manufacturing including the design files are provided in subfolder [gerber/pcb/](./gerber/pcb/). As the PCB is designed in EAGLE (current version 7.4.2), gerbers are exported in the actual format. However, some services have problem while automatically analyze those like OSHPark or JCLPCB. Please try the older format in [gerber/pcb.eagle_legacy_export/](./gerber/pcb.eagle_legacy_export/).
 
-For using the OSHPark service, you can also use my [uploaded project](https://oshpark.com/shared_projects/6n0e1VDd).
+For using the OSHPark service, you can also use my [uploaded project](https://oshpark.com/shared_projects/yqzeDTwA).
 
 **IMPORTANT**
 Please use a substrate thickness of 0.8mm in order to make installation easier.
@@ -130,13 +133,13 @@ Please use a substrate thickness of 0.8mm in order to make installation easier.
 
 ##### Sourcing the Parts
 
-For sourcing the parts, please be refered to the [Bill Of Materials](https://github.com/borti4938/SNES-AddOn-PCBs/blob/master/MultiRegion_with_DeJitter_QID/BOM.xlsx?raw=true)
+For sourcing the parts, please be referred to the [Bill Of Materials](https://github.com/borti4938/SNES-AddOn-PCBs/blob/master/MultiRegion_with_DeJitter_QID/BOM.xlsx?raw=true)
 
 ##### Soldering
 
 The PCB is designed with having hand soldering in mind. Most complicated footprints are probably the 44TQFP package of the CPLD or the 14TSSOP of the CDCE913.
 
-However, if you plan to use a stencil, you can use the [stencil gerber file](./gerber/stencil/SNES_MR_DeJitter_QID.GTP). All SMD are placed in top layer.
+However, if you plan to use a stencil, you can use the [stencil gerber file](./gerber/stencil/SNES_MR_DeJitter_QID.GTP). All SMDs are placed in top layer.
 
 **IMPORTANT**
 SuperCIC (PIC16F630-I/SL) and uIGR (PIC16F684-I/SL) need firmware flashed prior to soldering as mentioned later in this document.

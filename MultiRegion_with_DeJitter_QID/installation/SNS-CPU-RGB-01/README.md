@@ -38,7 +38,8 @@
 - connect _Rst.i_ and _Rst.o_ (either pad) to CIC-lock footprint pin 8 and 10, respectively
 - connect _Ctrl.port.10-6_ to front panel connector pins 10 - 6
 - connect _Vmode_ to lifted pins 24 and 30 of the S-PPUs
-- connect _/CS.i_ to pin 100 of S-PPU2
+- connect _/CS.i_ to pin 100 of S-PPU2  
+  (since SMR20190813 you have a second _/CS.i_ pad which you can use)
 - connect one of the _/CS.o (raw)_ pads to the lifted pin 7 of the S-RGB
 - connect _/CS.o (buf)_ to left footprint of R17 as shown in picture of R17 removal above
 - either close _SJ11_ or connect _Clk.CIC_ to CIC-lock footprint pin 7
@@ -66,7 +67,8 @@ With the help of the modding PCB you can switch between PAL and NTSC color carri
   ![](./nvmode.jpg)
 - remove R4 and R59, which are a 0ohm jumper and a 470ohm resistor. You need the 470ohm resistor of R59
 - connect the _CClk.o_ pad over the 470ohm resistor (or any replacement resistor) to the right pad of R4 footprint as shown  
-  ![](CCLK_connection.jpg)
+  ![](CCLK_connection.jpg)  
+  **Note:** Since modding board version SMR20190813 you can place the 470ohm resistor on the modding board. The footprint it labeled _R62_.
 - solder the GND shielding to _GND_ pad of the modding board
   (I also soldered the GND shielding to the left pin of R4, which is not needed at all (it's just the connection between R4 and R59))
 
