@@ -70,6 +70,12 @@ With the help of the modding PCB you can switch between PAL and NTSC color carri
 
 
 
+### C59 Fix on SNSP-CPU-01 Mainboard
+
+SNSP-CPU-01 mainboards have a 'normal' polarized electrolyte capacitor at C59 (10uF/50V). However, this is a design mistake. I highly recommend to replace it with a non-polatized bipolar electrolyte capacitor (10uF/25V)!
+
+
+
 ### Use of NTSC Game Pads
 
 Earlier PAL models were equipped with special game pad connector panels, which does not allow the user to use NTSC game pads. There are four diodes placed inside the traces of pad 1 and 2, which need PAL game pads to have two additional resistors inside. However, there is an easy fix to make it universal for all game pads. 
