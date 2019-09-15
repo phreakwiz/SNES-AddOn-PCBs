@@ -41,7 +41,7 @@
   ![](./MCLK_connected.jpg)
 - connect _/CS.i_ to the pad of the lifted pin 7 of the S-RGB; connect one of the _/CS.o (raw)_ pads to the lifted pin 7 of the S-RGB  
   ![](./csync.jpg)
-- connect one of the _Vmode_ pad to the lifted pin 9 of the S-RGB
+- connect one of the _/Vmode_ pad to the lifted pin 9 of the S-RGB
 - Connect _/CS.o (buf)_ to pin 3 of the MultiOut
 - leave _SJ32_ and _SJ61_  open!
 
