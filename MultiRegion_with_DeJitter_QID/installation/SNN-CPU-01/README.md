@@ -6,7 +6,8 @@
 
 - remove original CIC-lock (or at least lift pins 1, 2, 10 and 11), which sits behind the cartridge port between S-RGB and S-MIX  
   ![](./CIC-lock.jpg)
-  - if you remove the CIC-lock, you can also remove C9
+  - if you remove the CIC-lock, you can also remove C9  
+  - **Please note that the picture shows the US version and not the Jap. version of the console.** The US version does not have the large 1000uF capacitor C52 installed - the picture might be confusing. **Do not remove C52 if you have a Jap. console!**
 
 - lift pin 111 of S-CPUN  
   ![](./SCPUN_111_lifted.jpg)
