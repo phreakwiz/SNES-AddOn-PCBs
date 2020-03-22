@@ -140,7 +140,7 @@ seems to be a good choice. **By replacing R3 on the SNES mainboard** you must no
 
 Also some consoles have some output swing on changes of the output amplitude. These swing can be +/- 10mV to 20mV in peak-to-peak and runs over several pixels width. This results into **ghosting**.
 
-The ghosting can be vanished by replacing C11 on the SNES mainboard by a 470nF (accuracy +/- 20% is fair enough) X5R / X7R ceramic capacitor in SMD0805 (big model) or SMD0603 (SNES2) size.
+The ghosting can be vanished by replacing C11 on the SNES mainboard by a 220nF (accuracy +/- 20% is fair enough) X5R / X7R ceramic capacitor in SMD0805 (big model) or SMD0603 (SNES2) size.
 **Many thanks to [Voultar and Ste](https://shmups.system11.org/viewtopic.php?p=1282757#p1282757) for finding that out!!!**
 
 ---
