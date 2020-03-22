@@ -84,6 +84,9 @@ These are just general descriptions of the in- and outputs. Please refer to the 
 - **SJ31:** closing this jumper permanently disables the de-jitter function. This solder jumper is a bit larger to give the installer the option to connect a slide switch here (_speed-runner discussions_)
 - **SJ32:** short this jumper if the board is installed in a non-1Chip-SNES (SNES Jr. / SNES2 are also 1Chip-SNES)
 - **SJ61:** distributes clock output to cartridge slot pin 1. This jumper **must not** be closed in 1Chip-SNES. Side note: if SJ32 is open, SJ61 has to open, too.
+- **SJ93**: (since SMR20200323) controls sync level of buffered csync output. Sync level:
+  - opened: appr. 1.87V @ 75ohm termination i.e. needs a resistor inside the sync wire further attanuating the signal. Designed to work for cables with 470 ohm resistor inside resulting in appr. 450mV @ 75ohm termination
+  - closed: appr. 300mV @ 75ohm termination suitable for pass through wired cables at sync, works with standard TV / scaler setup
 
 #### Firmware
 
