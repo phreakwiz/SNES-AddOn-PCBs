@@ -84,6 +84,16 @@ These are just general descriptions of the in- and outputs. Please refer to the 
 - **SJ31:** closing this jumper permanently disables the de-jitter function. This solder jumper is a bit larger to give the installer the option to connect a slide switch here (_speed-runner discussions_)
 - **SJ32:** short this jumper if the board is installed in a non-1Chip-SNES (SNES Jr. / SNES2 are also 1Chip-SNES)
 - **SJ61:** distributes clock output to cartridge slot pin 1. This jumper **must not** be closed in 1Chip-SNES. Side note: if SJ32 is open, SJ61 has to open, too.
+- **SJ63:** (since SMR20200323) decides which color carrier is forwarded to output. This jumper has two option; you must not close both jumpers!
+  - SJ63.1: (marked with a dot) outputs color carrier derived from non-dejittered clock.  
+    Use this if you have a problem with discoloring on composite sync or S-Video ([issue thread at shmups](https://shmups.system11.org/viewtopic.php?p=1389666#p1389666))  
+    Btw: this is default for all earlier version of the modding board flashed with the current firmware. If you need the other color carrier, just go back to a previous version.
+  - SJ63.2: outputs color carrier derived from dejittered clock.  
+    (I personally need to use this clock as my TV does not like the color carrier from non-dejittered clock)
+  - Again: **You must not close both jumpers!**
+- **SJ93**: (since SMR20200323) controls sync level of buffered csync output. Sync level:
+  - opened: appr. 1.87V @ 75ohm termination i.e. needs a resistor inside the sync wire further attanuating the signal. Designed to work for cables with 470 ohm resistor inside resulting in appr. 450mV @ 75ohm termination
+  - closed: appr. 300mV @ 75ohm termination suitable for pass through wired cables at sync, works with standard TV / scaler setup
 
 #### Firmware
 
@@ -124,7 +134,7 @@ Use the DFO programmer to flash the PLL. The [DFO readme](./dfo/SOURCE.md) descr
 
 You can choose any manufacturer which you prefer. All files for manufacturing including the design files are provided in subfolder [gerber/pcb/](./gerber/pcb/). As the PCB is designed in EAGLE (current version 7.4.2), gerbers are exported in the actual format. However, some services have problem while automatically analyze those like OSHPark or JCLPCB. Please try the older format in [gerber/pcb.eagle_legacy_export/](./gerber/pcb.eagle_legacy_export/).
 
-For using the OSHPark service, you can also use my [uploaded project](https://oshpark.com/shared_projects/yqzeDTwA).
+For using the OSHPark service, you can also look for my [uploaded project](https://oshpark.com/profiles/borti4938). (check version)
 
 **IMPORTANT**
 Please use a substrate thickness of 0.8mm in order to make installation easier.
