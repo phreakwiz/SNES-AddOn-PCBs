@@ -121,7 +121,7 @@ Use an Altera USB Blaster (or clone) for flashing the firmware.
 After assembly, the modding board has to be powered for flashing the firmware. This can be done by using the DFO programmer connected with V_target set to 5V (or 3.3V) if the modding board is not installed yet (other power solutions are possible, but please use the 5V power supply rail to not harm the DC converters. Or you can simply switch on the SNES for programming. Of course, the CPLD can be also flashed prior to assembly if you have a proper adapter at hand.
 
 
-- **U5:** CDCE913 with [appropriate configuration](https://github.com/borti4938/SNES-AddOn-PCBs/blob/master/MultiRegion_with_DeJitter_QID/dfo/clockpro/snes_multi_region.isf?raw=true)
+- **U5:** CDCE913 with [appropriate configuration](https://github.com/borti4938/SNES-AddOn-PCBs/blob/master/MultiRegion_with_DeJitter_QID/dfo/clockpro/snes_multi_region.hex?raw=true)
 
 ![](./pics/dfo_pcb.jpg)
 
