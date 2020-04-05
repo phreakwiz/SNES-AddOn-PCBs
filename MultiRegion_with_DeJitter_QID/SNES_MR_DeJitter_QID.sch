@@ -8081,6 +8081,10 @@ http://www.st.com&lt;p&gt;
 <part name="SJ93" library="jumper" deviceset="SJ" device="SMALL"/>
 <part name="R93" library="rcl" deviceset="R-EU_" device="R0603" value="623"/>
 <part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="SJ63A" library="jumper" deviceset="SJ" device="SMALL"/>
+<part name="SJ63B" library="jumper" deviceset="SJ" device="SMALL"/>
+<part name="R63" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8486,25 +8490,25 @@ to be removed anyway</text>
 <instance part="GND33" gate="1" x="45.72" y="256.54" smashed="yes" rot="R90">
 <attribute name="VALUE" x="48.26" y="254" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U6" gate="G$1" x="132.08" y="170.18" smashed="yes"/>
+<instance part="U6" gate="G$1" x="132.08" y="167.64" smashed="yes"/>
 <instance part="U6" gate="G$2" x="132.08" y="182.88" smashed="yes"/>
 <instance part="COLOR_SC_O" gate="1" x="177.8" y="190.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="178.943" y="188.6458" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="178.943" y="193.802" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U6" gate="G$3" x="137.16" y="167.64" smashed="yes" rot="R90"/>
-<instance part="C61" gate="G$1" x="124.46" y="162.56" smashed="yes">
-<attribute name="NAME" x="125.984" y="162.941" size="1.778" layer="95"/>
-<attribute name="VALUE" x="125.984" y="157.861" size="1.778" layer="96"/>
+<instance part="U6" gate="G$3" x="137.16" y="165.1" smashed="yes" rot="R90"/>
+<instance part="C61" gate="G$1" x="124.46" y="160.02" smashed="yes">
+<attribute name="NAME" x="125.984" y="160.401" size="1.778" layer="95"/>
+<attribute name="VALUE" x="125.984" y="155.321" size="1.778" layer="96"/>
 </instance>
-<instance part="P+2" gate="VCC" x="124.46" y="172.72" smashed="yes">
-<attribute name="VALUE" x="121.92" y="170.18" size="1.778" layer="96" rot="R90"/>
+<instance part="P+2" gate="VCC" x="124.46" y="170.18" smashed="yes">
+<attribute name="VALUE" x="121.92" y="167.64" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND24" gate="1" x="149.86" y="162.56" smashed="yes">
-<attribute name="VALUE" x="147.32" y="160.02" size="1.778" layer="96"/>
+<instance part="GND24" gate="1" x="149.86" y="154.94" smashed="yes">
+<attribute name="VALUE" x="147.32" y="152.4" size="1.778" layer="96"/>
 </instance>
-<instance part="GND25" gate="1" x="124.46" y="154.94" smashed="yes">
-<attribute name="VALUE" x="121.92" y="152.4" size="1.778" layer="96"/>
+<instance part="GND25" gate="1" x="124.46" y="152.4" smashed="yes">
+<attribute name="VALUE" x="121.92" y="149.86" size="1.778" layer="96"/>
 </instance>
 <instance part="+3V8" gate="G$1" x="22.86" y="203.2" smashed="yes">
 <attribute name="VALUE" x="20.32" y="198.12" size="1.778" layer="96" rot="R90"/>
@@ -8676,6 +8680,21 @@ to be removed anyway</text>
 <instance part="GND27" gate="1" x="170.18" y="121.92" smashed="yes">
 <attribute name="VALUE" x="167.64" y="119.38" size="1.778" layer="96"/>
 </instance>
+<instance part="SJ63A" gate="1" x="119.38" y="195.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="119.38" y="182.88" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="123.19" y="193.04" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SJ63B" gate="1" x="124.46" y="195.58" smashed="yes" rot="R270">
+<attribute name="NAME" x="124.46" y="182.88" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="120.65" y="198.12" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R63" gate="G$1" x="119.38" y="185.42" smashed="yes" rot="R90">
+<attribute name="NAME" x="117.8814" y="181.61" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="122.682" y="181.61" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND28" gate="1" x="119.38" y="177.8" smashed="yes">
+<attribute name="VALUE" x="116.84" y="175.26" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8827,7 +8846,7 @@ to be removed anyway</text>
 <segment>
 <pinref part="U6" gate="G$3" pin="GND"/>
 <pinref part="GND24" gate="1" pin="GND"/>
-<wire x1="149.86" y1="167.64" x2="149.86" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="165.1" x2="149.86" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C61" gate="G$1" pin="2"/>
@@ -8873,6 +8892,10 @@ to be removed anyway</text>
 <segment>
 <pinref part="R93" gate="G$1" pin="2"/>
 <pinref part="GND27" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R63" gate="G$1" pin="1"/>
+<pinref part="GND28" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="REGION" class="0">
@@ -9461,10 +9484,10 @@ to be removed anyway</text>
 <segment>
 <pinref part="U6" gate="G$3" pin="VCC"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="124.46" y1="167.64" x2="124.46" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="C61" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="165.1" x2="124.46" y2="167.64" width="0.1524" layer="91"/>
-<junction x="124.46" y="167.64"/>
+<pinref part="C61" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="162.56" x2="124.46" y2="165.1" width="0.1524" layer="91"/>
+<junction x="124.46" y="165.1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -9625,8 +9648,8 @@ to be removed anyway</text>
 <net name="MCLK_EXT_O_PRE" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="Y"/>
-<wire x1="144.78" y1="177.8" x2="147.32" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="182.88" x2="147.32" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="175.26" x2="147.32" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="182.88" x2="147.32" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="182.88" x2="147.32" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="R61" gate="G$1" pin="1"/>
 </segment>
@@ -9682,20 +9705,25 @@ to be removed anyway</text>
 <net name="COLOR_SC_PRE" class="0">
 <segment>
 <pinref part="U6" gate="G$2" pin="A"/>
-<wire x1="119.38" y1="200.66" x2="119.38" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="190.5" x2="119.38" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="U3" gate="_" pin="IO29"/>
+<pinref part="SJ63B" gate="1" pin="2"/>
+<pinref part="SJ63A" gate="1" pin="1"/>
+<wire x1="119.38" y1="190.5" x2="124.46" y2="190.5" width="0.1524" layer="91"/>
+<junction x="124.46" y="190.5"/>
+<pinref part="R63" gate="G$1" pin="2"/>
+<junction x="119.38" y="190.5"/>
 </segment>
 </net>
 <net name="MCLK_EXT_PRE" class="0">
 <segment>
-<wire x1="116.84" y1="177.8" x2="116.84" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="U6" gate="G$1" pin="A"/>
-<wire x1="124.46" y1="177.8" x2="116.84" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="190.5" x2="116.84" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="175.26" x2="114.3" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="U3" gate="_" pin="IO28"/>
+<wire x1="116.84" y1="190.5" x2="114.3" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="190.5" x2="114.3" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="COLOR_SC_O" class="0">
+<net name="COLOR_SC_PCB_O" class="0">
 <segment>
 <pinref part="COLOR_SC_O" gate="1" pin="P"/>
 <wire x1="160.02" y1="190.5" x2="167.64" y2="190.5" width="0.1524" layer="91"/>
@@ -9709,12 +9737,8 @@ to be removed anyway</text>
 </net>
 <net name="COLOR_SC_O_PRE" class="0">
 <segment>
-<pinref part="U6" gate="G$2" pin="Y"/>
-<wire x1="144.78" y1="190.5" x2="149.86" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="R62" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="190.5" x2="149.86" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="SJ62" gate="1" pin="1"/>
-<junction x="149.86" y="190.5"/>
+<pinref part="U3" gate="_" pin="IO29"/>
+<pinref part="SJ63A" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="MCLK_PAL_EXT_I_PRE" class="0">
@@ -9727,14 +9751,14 @@ to be removed anyway</text>
 <net name="SEL_SNES_1CHIP" class="0">
 <segment>
 <pinref part="U3" gate="_" pin="IO30"/>
-<wire x1="121.92" y1="200.66" x2="121.92" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="198.12" x2="142.24" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="198.12" x2="142.24" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="200.66" x2="121.92" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="195.58" x2="142.24" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="195.58" x2="142.24" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="SJ32" gate="1" pin="1"/>
 <pinref part="R32" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="198.12" x2="147.32" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="198.12" x2="147.32" y2="200.66" width="0.1524" layer="91"/>
-<junction x="142.24" y="198.12"/>
+<wire x1="142.24" y1="195.58" x2="147.32" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="195.58" x2="147.32" y2="200.66" width="0.1524" layer="91"/>
+<junction x="142.24" y="195.58"/>
 </segment>
 </net>
 <net name="NPALMODE_0" class="0">
@@ -9799,9 +9823,103 @@ to be removed anyway</text>
 <pinref part="R93" gate="G$1" pin="1"/>
 </segment>
 </net>
+<net name="COLOR_SC_OPT_O_PRE" class="0">
+<segment>
+<pinref part="U3" gate="_" pin="IO31"/>
+<pinref part="SJ63B" gate="1" pin="1"/>
+</segment>
+</net>
+<net name="COLOR_SC_PCB_O_PRE" class="0">
+<segment>
+<pinref part="U6" gate="G$2" pin="Y"/>
+<wire x1="144.78" y1="190.5" x2="149.86" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="R62" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="190.5" x2="149.86" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="SJ62" gate="1" pin="1"/>
+<junction x="149.86" y="190.5"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,15.24,160.02,VCC,+5V,,,,"/>
+<approved hash="102,1,96.52,259.08,VCC,+5V,,,,"/>
+<approved hash="102,1,104.14,259.08,VCC,+5V,,,,"/>
+<approved hash="102,1,137.16,370.84,VCC,+5V,,,,"/>
+<approved hash="102,1,86.36,370.84,VCC,+5V,,,,"/>
+<approved hash="102,1,55.88,365.76,VCC,+5V,,,,"/>
+<approved hash="102,1,53.34,256.54,VCC,+5V,,,,"/>
+<approved hash="102,1,190.5,251.46,VCC,+5V,,,,"/>
+<approved hash="102,1,86.36,66.04,VCC,+5V,,,,"/>
+<approved hash="102,1,226.06,205.74,VCC,+5V,,,,"/>
+<approved hash="102,1,124.46,167.64,VCC,+5V,,,,"/>
+<approved hash="104,1,187.96,220.98,U3P,VCC,+3V3,,,"/>
+<approved hash="104,1,187.96,223.52,U3P,VCC,+3V3,,,"/>
+<approved hash="104,1,187.96,226.06,U3P,VCC,+3V3,,,"/>
+<approved hash="104,1,226.06,203.2,U4G$3,VCC,+5V,,,"/>
+<approved hash="104,1,190.5,154.94,U9,VCC,+3V3,,,"/>
+<approved hash="208,1,170.18,370.84,+1V8,sup,,,,"/>
+<approved hash="208,1,162.56,368.3,+1V8,out,,,,"/>
+<approved hash="208,1,114.3,83.82,+1V8,sup,,,,"/>
+<approved hash="208,1,106.68,81.28,+3V3,sup,,,,"/>
+<approved hash="208,1,119.38,370.84,+3V3,sup,,,,"/>
+<approved hash="208,1,111.76,368.3,+3V3,out,,,,"/>
+<approved hash="208,1,185.42,228.6,+3V3,sup,,,,"/>
+<approved hash="208,1,38.1,142.24,+3V3,sup,,,,"/>
+<approved hash="208,1,226.06,226.06,+3V3,sup,,,,"/>
+<approved hash="208,1,73.66,137.16,+3V3,sup,,,,"/>
+<approved hash="208,1,58.42,137.16,+3V3,sup,,,,"/>
+<approved hash="208,1,22.86,200.66,+3V3,sup,,,,"/>
+<approved hash="208,1,147.32,213.36,+3V3,sup,,,,"/>
+<approved hash="208,1,190.5,162.56,+3V3,sup,,,,"/>
+<approved hash="111,1,124.46,198.12,SEL_SNES_1CHIP,,,,,"/>
+<approved hash="113,1,114.494,273.047,LED_G,,,,,"/>
+<approved hash="113,1,114.422,267.967,LED_R,,,,,"/>
+<approved hash="113,1,29.7359,143.507,JTAG.3V3,,,,,"/>
+<approved hash="113,1,30.2983,138.427,JTAG.GND,,,,,"/>
+<approved hash="113,1,54.6125,151.437,JTAG.TDI,,,,,"/>
+<approved hash="113,1,67.3125,152.071,JTAG.TMS,,,,,"/>
+<approved hash="113,1,95.2525,151.933,JTAG.TCK,,,,,"/>
+<approved hash="113,1,107.953,152.075,JTAG.TDO,,,,,"/>
+<approved hash="113,1,170.826,181.613,MCLK_EXT_O,,,,,"/>
+<approved hash="113,1,172.72,171.79,SJ61,,,,,"/>
+<approved hash="113,1,25.4,161.63,SJ31,,,,,"/>
+<approved hash="113,1,48.26,364.31,FB1,,,,,"/>
+<approved hash="113,1,116.84,311.49,SJ11,,,,,"/>
+<approved hash="113,1,188.89,259.08,SJ21,,,,,"/>
+<approved hash="113,1,82.3172,67.3075,I2C.VCC,,,,,"/>
+<approved hash="113,1,82.4601,72.3875,I2C.GND,,,,,"/>
+<approved hash="113,1,122.886,92.7075,I2C.SDA,,,,,"/>
+<approved hash="113,1,112.587,90.1675,I2C.SCL,,,,,"/>
+<approved hash="113,1,37.8206,252.727,GND,,,,,"/>
+<approved hash="113,1,130.071,193.571,FRAME1,,,,,"/>
+<approved hash="113,1,116.84,80.1903,FB51,,,,,"/>
+<approved hash="113,1,38.3651,257.807,GND32,,,,,"/>
+<approved hash="113,1,170.536,189.233,COLOR_SC_O,,,,,"/>
+<approved hash="113,1,140.63,205.74,SJ32,,,,,"/>
+<approved hash="113,1,193.319,313.693,RST_I,,,,,"/>
+<approved hash="113,1,206.6,313.693,RST_O_1,,,,,"/>
+<approved hash="113,1,206.6,308.613,RST_O_0,,,,,"/>
+<approved hash="113,1,204.979,280.673,CTRL_4,,,,,"/>
+<approved hash="113,1,194.819,278.133,CTRL_3,,,,,"/>
+<approved hash="113,1,184.659,275.593,CTRL_2,,,,,"/>
+<approved hash="113,1,124.064,280.667,PALMODE,,,,,"/>
+<approved hash="113,1,129.036,316.227,CIC_CLK_EXT,,,,,"/>
+<approved hash="113,1,77.4725,154.133,#PALMODE_0,,,,,"/>
+<approved hash="113,1,82.5525,154.133,#PALMODE_1,,,,,"/>
+<approved hash="113,1,80.0125,174.207,CSYNC_O_3V3_0,,,,,"/>
+<approved hash="113,1,143.293,135.893,CSYNC_O_3V3_1,,,,,"/>
+<approved hash="113,1,230.796,143.513,CSYNC_O_BUF,,,,,"/>
+<approved hash="113,1,92.7125,186.953,CSYNC_I,,,,,"/>
+<approved hash="113,1,154.94,192.11,SJ62,,,,,"/>
+<approved hash="113,1,92.7125,174.962,CSYNC_I1,,,,,"/>
+<approved hash="113,1,171.79,139.7,SJ93,,,,,"/>
+<approved hash="113,1,119.04,193.633,SJ63A,,,,,"/>
+<approved hash="113,1,124.12,193.633,SJ63B,,,,,"/>
+<approved hash="115,1,135.89,279.4,PALMODE,,,,,"/>
+<approved hash="115,1,189.23,314.96,RST_I,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
